@@ -54,7 +54,7 @@ export function Footer() {
           <div className="flex items-center justify-center gap-4 mb-8">
             {[
               { icon: Github, href: 'https://github.com/ashwanipal', label: 'GitHub' },
-              { icon: Linkedin, href: 'https://linkedin.com/in/ashwanipal', label: 'LinkedIn' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/ashwanipal7', label: 'LinkedIn' },
               { icon: Mail, href: 'mailto:ashwani56740@gmail.com', label: 'Email' },
             ].map((social) => (
               <a

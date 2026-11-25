@@ -1,5 +1,5 @@
 import { resumeData } from '@/lib/portfolio-data'
-import { Award, BookOpen, Briefcase, Code, Download } from 'lucide-react'
+import { Award, BookOpen, Briefcase, Download } from 'lucide-react'
 
 interface ResumeSectionProps {
   data?: typeof resumeData
@@ -63,30 +63,6 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
                 <h4 className="text-base md:text-lg font-semibold text-foreground mb-1">{item.title}</h4>
                 <p className="text-xs md:text-sm text-accent mb-3 font-medium">{item.period}</p>
                 <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Skills */}
-      <div>
-        <div className="flex items-center gap-2 md:gap-3 mb-6">
-          <Code className="w-5 h-5 md:w-6 md:h-6 text-accent" />
-          <h3 className="text-xl md:text-2xl font-bold text-foreground">My Skills</h3>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-          {data.skills.map((skill, index) => (
-            <div key={index} className="bg-secondary/50 rounded-xl p-4 border border-border">
-              <div className="flex justify-between mb-3">
-                <span className="text-sm font-semibold text-foreground">{skill.name}</span>
-                <span className="text-sm font-bold text-accent">{skill.level}%</span>
-              </div>
-              <div className="h-2.5 bg-background rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-gradient-to-r from-accent to-accent/70 rounded-full transition-all duration-1000 ease-out"
-                  style={{ width: `${skill.level}%` }}
-                />
               </div>
             </div>
           ))}

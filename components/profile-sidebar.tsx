@@ -7,16 +7,15 @@ interface ProfileSidebarProps {
 
 export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
   return (
-    <aside className="w-full lg:w-80 bg-card rounded-2xl border border-border p-4 md:p-6 lg:sticky lg:top-8 h-fit">
+    <aside className="w-full flex-shrink-0 rounded-2xl border border-border bg-card p-4 md:p-6 lg:sticky lg:top-8 lg:w-80">
       {/* Profile Image */}
       <div className="flex flex-col items-center">
-        <div className="relative w-24 h-24 md:w-32 md:h-32 mb-4 md:mb-6">
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent/20 via-accent/5 to-transparent animate-pulse-slow" />
-          <div className="absolute inset-[2px] rounded-3xl bg-secondary overflow-hidden">
+        <div className="mb-4 h-28 w-28 rounded-3xl bg-gradient-to-br from-accent/70 via-accent/20 to-transparent p-[2px] shadow-lg md:mb-6 md:h-32 md:w-32">
+          <div className="h-full w-full overflow-hidden rounded-[22px] bg-secondary">
             <img
               src={data.avatar || "/placeholder.svg"}
               alt={data.name}
-              className="w-full h-full object-cover"
+              className="h-full w-full object-cover object-top"
             />
           </div>
         </div>
@@ -99,7 +98,7 @@ export function ProfileSidebar({ data = profileData }: ProfileSidebarProps) {
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded-lg bg-secondary hover:bg-accent hover:text-accent-foreground transition-colors flex items-center justify-center"
-          aria-label="Twitter"
+          aria-label="LinkedIn"
         >
           <Linkedin className="w-5 h-5" />
         </a>

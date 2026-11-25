@@ -10,7 +10,7 @@ export const profileData = {
 
   social: {
     github: 'https://github.com/account',
-    Linkedin: 'www.linkedin.com/in/ashwanipal7',
+    Linkedin: 'https://www.linkedin.com/in/ashwanipal7',
     instagram: 'https://instagram.com/Ashwan812',
   },
 };
@@ -34,46 +34,55 @@ export const aboutData = {
         'Creating robust APIs and server-side solutions with Node.js and modern frameworks.',
     },
     {
-      icon: 'Smartphone',
-      title: 'Mobile Development',
+      icon: 'CloudCog',
+      title: 'DevOps Engineering',
       description:
-        'Professional development of mobile applications with React Native and modern tools.',
+        'Currently building DevOps skills through hands-on work with Docker, CI/CD pipelines, cloud deployment, and application monitoring.',
+      status: 'Ongoing',
     },
     {
-      icon: 'PenTool',
-      title: 'UI/UX Design',
+      icon: 'Rocket',
+      title: 'Forward Deployed Engineer',
       description:
-        'Designing intuitive and beautiful user interfaces that enhance user experience.',
+        'Working directly with users to understand real-world needs, rapidly prototype solutions, and deploy reliable software in production environments.',
+      status: 'Ongoing',
+    },
+    {
+      icon: 'BrainCircuit',
+      title: 'AI Engineering',
+      description:
+        'Exploring AI engineering by integrating AI capabilities into applications and connecting AI services with backend systems.',
+      status: 'Ongoing',
     },
   ],
 
-  testimonials: [
+  highlights: [
     {
-      avatar: '/profile.png',
-      name: 'Java Backend Developer',
-      text: 'I enjoy building backend applications using Java, Spring Boot, REST APIs, and microservices architecture. My focus is on writing clean, maintainable, and practical code.',
+      title: 'Java Backend Development',
+      description:
+        'Hands-on experience building REST APIs and backend applications with Java, Spring Boot, JPA/Hibernate, and MySQL.',
     },
     {
-      avatar: '/profile.png',
-      name: 'Backend Development',
-      text: 'Experienced in working with MySQL, MongoDB, Kafka, and backend service integration through hands-on project development.',
+      title: 'Project-Based Experience',
+      description:
+        'Built projects including a Gym Management System, Student CRM, and Multi-Vendor Course Platform.',
     },
     {
-      avatar: '/profile.png',
-      name: 'Full-Stack Projects',
-      text: 'Built practical applications including a Gym Management System, Student CRM, and Multi-Vendor Course Platform using modern development technologies.',
+      title: 'Currently Building',
+      description:
+        'Developing GateKeeper, a custom API Gateway with request routing, rate limiting, idempotency, and Kafka-based analytics.',
     },
     {
-      avatar: '/profile.png',
-      name: 'API Gateway Development',
-      text: 'Currently developing GateKeeper, a custom API Gateway project featuring request routing, rate limiting, idempotency, and asynchronous analytics.',
+      title: 'Continuous Learning',
+      description:
+        'Growing skills in DevOps and AI engineering through ongoing learning and hands-on practice.',
     },
   ],
 
-  clients: [
+  technologies: [
     { name: 'Java', logo: '/java.png' },
     { name: 'Spring Boot', logo: '/spring-boot.png' },
-    { name: 'Microservices', logo: '/microservices.png' },
+    { name: 'Microservices', logo: '' },
     { name: 'MySQL', logo: '/mysql.png' },
     { name: 'MongoDB', logo: '/mongodb.png' },
     { name: 'Apache Kafka', logo: '/kafka.png' },
@@ -87,7 +96,7 @@ education: [
     institution: 'SAGE University, Bhopal',
     period: '2022 — 2026',
     description:
-      'Pursuing a Bachelor of Technology in Computer Science Engineering with a strong focus on Java Backend Development, Object-Oriented Programming, Data Structures and Algorithms, Database Management Systems, and Software Engineering. Developed practical skills in Java, Spring Boot, RESTful APIs, and Microservices Architecture through academic learning and hands-on projects.',
+      'Graduated in 2026 with a Bachelor of Technology in Computer Science Engineering from SAGE University, Bhopal. Built a strong foundation in object-oriented programming, data structures and algorithms, database management systems, and software engineering, while developing practical skills in Java, Spring Boot, RESTful APIs, and microservices through coursework and hands-on projects.',
   },
 ],
 
@@ -102,16 +111,6 @@ experience: [
       'Worked on backend application development using Java and Spring Boot. Developed and tested RESTful APIs, implemented backend modules, and integrated application components with MySQL databases. Gained practical experience in API integration, database operations, debugging, and writing clean, maintainable code while following software development best practices.',
   },
 ],
-
-
-  skills: [
-    { name: 'Java', level: 90 },
-    { name: 'Spring Boot', level: 85 },
-    { name: 'Hibernate', level: 80 },
-    { name: 'MySQL', level: 85 },
-    { name: 'REST APIs', level: 88 },
-    { name: 'Microservices', level: 75 },
-  ],
 };
 
 export const portfolioData = {
@@ -203,38 +202,8 @@ export const portfolioData = {
 };
 
 export const resumeData = {
-  education: [
-    {
-      title: 'B.Tech',
-    },
-  ],
-};
-
-export const blogData = {
-  posts: [
-    {
-      title: 'Building Modern Web Applications with Next.js 15',
-      category: 'Development',
-      date: 'Mar 15, 2024',
-      readTime: '8 min',
-      image: '/web-development-coding.png',
-      excerpt:
-        'Deep dive into Next.js 15 features and App Router enhancements.',
-      tags: ['Next.js', 'React', 'Web Development'],
-      slug: 'building-modern-web-apps-nextjs-15',
-    },
-    {
-      title: 'Microservices Architecture: A Complete Guide',
-      category: 'Architecture',
-      date: 'Mar 8, 2024',
-      readTime: '12 min',
-      image: '/software-architecture.jpg',
-      excerpt:
-        'Design scalable microservices with real-world examples.',
-      tags: ['Architecture', 'Backend', 'DevOps'],
-      slug: 'microservices-architecture-guide',
-    },
-  ],
+  education: aboutData.education,
+  experience: aboutData.experience,
 };
 
 export const contactData = {

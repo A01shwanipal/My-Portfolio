@@ -14,7 +14,6 @@ import { ThemeToggle } from '@/components/theme-toggle'
 
 import {
   aboutData,
-  blogData,
   contactData,
   portfolioData,
   profileData,
@@ -25,7 +24,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('about')
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen w-full bg-background flex flex-col">
 
       {/* 🔥 THEME TOGGLE */}
       <div className="fixed top-4 right-4 md:top-6 md:right-6 z-50">
@@ -36,8 +35,8 @@ export default function Home() {
       <HeroSection />
 
       {/* 🔥 MAIN CONTENT */}
-      <div className="flex-1 mx-auto max-w-7xl p-3 sm:p-4 md:p-6 lg:p-12">
-        <div className="flex flex-col lg:flex-row gap-3 sm:gap-4 md:gap-6">
+      <div className="mx-auto w-full max-w-7xl flex-1 p-3 sm:p-4 md:p-6 lg:p-8">
+        <div className="flex min-w-0 flex-col gap-3 sm:gap-4 md:gap-6 lg:flex-row">
 
           {/* 🔥 SIDEBAR */}
           <ProfileSidebar data={profileData} />
@@ -75,7 +74,7 @@ export default function Home() {
               {activeSection === 'resume' && <ResumeSection data={resumeData} />}
               {activeSection === 'projects' && <PortfolioSection data={portfolioData} />}
               {activeSection === 'skills' && <SkillsSection />}
-              {activeSection === 'blog' && <BlogSection data={blogData} />}
+              {activeSection === 'blog' && <BlogSection />}
               {activeSection === 'contact' && <ContactSection data={contactData} />}
             </div>
 
