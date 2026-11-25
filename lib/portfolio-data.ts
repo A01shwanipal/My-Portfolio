@@ -11,7 +11,7 @@ export const profileData = {
     github: 'https://github.com/account',
     Linkedin: 'www.linkedin.com/in/ashwanipal7',
     instagram: 'https://instagram.com/Ashwan812',
-   
+
   },
 }
 
@@ -27,7 +27,7 @@ export const aboutData = {
       title: 'Frontend Development',
       description: 'Building modern, responsive web applications with React, Next.js, and TypeScript.',
     },
-    
+
     {
       icon: 'Zap',
       title: 'Backend Development',
@@ -89,7 +89,7 @@ export const resumeData = {
     {
       title: 'Software Development Intern',
       company: 'Naman Digital Pvt. Ltd.',
-      period: 'Jun 2025 — Aug 2025',
+      period: 'Jul 2026 — 0ct 2026',
       description:
         'Developed and tested REST APIs using Java and Spring Boot. Worked on backend modules, API integration, and MySQL database operations following industry standards.',
     },
@@ -112,6 +112,44 @@ export const portfolioData = {
   categories: ['all', 'web development', 'applications'],
 
   projects: [
+    {
+      title: 'GateKeeper – Custom API Gateway',
+      category: 'web development',
+      description:
+        'Ongoing backend-focused API Gateway project built with Spring Boot and microservices. Includes request routing, reverse proxying, rate limiting, idempotency, API management, and Kafka-based asynchronous analytics.',
+      tech: [
+        'Java',
+        'Spring Boot',
+        'Microservices',
+        'Kafka',
+        'MySQL',
+        'MongoDB',
+      ],
+      image: '/gatekeeper.png',
+      githubUrl: 'https://github.com/A01shwanipal',
+      liveUrl: '#',
+    },
+
+    {
+      title: 'Gym Management System',
+      category: 'web development',
+      description:
+        'Full-stack gym management application with a React.js frontend and Spring Boot microservices backend. Includes REST APIs, MySQL database integration, and responsive user interfaces. Currently used by a gym owner.',
+      tech: [
+        'Java',
+        'Spring Boot',
+        'Microservices',
+        'MySQL',
+        'React.js',
+        'HTML',
+        'CSS',
+        'JavaScript',
+      ],
+      image: '/gym.png',
+      githubUrl: 'https://github.com/A01shwanipal',
+      liveUrl: '#',
+    },
+
     {
       title: 'Student CRM System',
       category: 'web development',
@@ -183,8 +221,8 @@ export const blogData = {
       tags: ['Architecture', 'Backend', 'DevOps'],
       slug: 'microservices-architecture-guide',
     },
-   
-    
+
+
   ],
 }
 
@@ -193,5 +231,5 @@ export const contactData = {
   phone: '9327192863',
   location: 'Bhopal M.P India',
   mapEmbedUrl:
- 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117498.21580453702!2d77.3318895!3d23.2599333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c42f2d9c1e4f5%3A0x8f0b1b5b0b6e5c3!2sBhopal%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin'
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117498.21580453702!2d77.3318895!3d23.2599333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c42f2d9c1e4f5%3A0x8f0b1b5b0b6e5c3!2sBhopal%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin'
 }
