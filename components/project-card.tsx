@@ -15,15 +15,17 @@ export function ProjectCard({
 }: ProjectCardProps) {
   return (
     <article className="group cursor-pointer">
-      <div className="mb-4 overflow-hidden border border-border bg-card">
+
+      <div className="mb-4 overflow-hidden rounded-xl border border-white/10 bg-[#080d19]">
         <Image
-          src={image || "/placeholder.svg"}
+          src={image || '/placeholder.svg'}
           alt={title}
-          width={600}
-          height={400}
-          className="aspect-[3/2] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          width={1200}
+          height={500}
+          className="h-auto w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
         />
       </div>
+
       <h3 className="mb-3 text-xl font-semibold tracking-tight text-foreground transition-colors group-hover:text-muted-foreground">
         {title}
       </h3>
