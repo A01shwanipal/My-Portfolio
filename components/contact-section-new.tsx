@@ -17,8 +17,17 @@ export function ContactSection({ data = contactData }: ContactSectionProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
+
+    const phoneNumber = data.phone.replace(/\D/g, '')
+    const whatsappNumber = phoneNumber.length === 10 ? `91${phoneNumber}` : phoneNumber
+    const message = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Message: ${formData.message}`,
+    ].join('\n')
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
+
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
   }
 
   return (

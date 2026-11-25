@@ -3,46 +3,6 @@
 import { Github, Linkedin, Mail, Phone } from 'lucide-react'
 
 export function Footer() {
-  const handleDownloadResume = () => {
-    const resumeContent = `
-ASHWANI PAL
-Java Backend Developer
-================================
-
-CONTACT
-Email: ashwani56740@gmail.com
-Phone: +91-9424497754
-Location: India
-
-SKILLS
-- Java / Spring Boot
-- Microservices Architecture
-- Apache Kafka
-- MySQL / PostgreSQL
-- REST APIs / WebSocket
-- System Design
-
-EXPERIENCE
-- Building scalable backend systems
-- Designing RESTful APIs
-- Event-driven architectures with Kafka
-- Database optimization
-
-================================
-Open for backend development, internships, and exciting opportunities.
-    `
-    
-    const blob = new Blob([resumeContent], { type: 'text/plain' })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = 'ashwani-pal-resume.txt'
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-    URL.revokeObjectURL(url)
-  }
-
   return (
     <footer className="relative mt-8 overflow-hidden">
       {/* Background with gradient */}
@@ -118,12 +78,13 @@ Open for backend development, internships, and exciting opportunities.
             >
               Hire Me
             </a>
-            <button
-              onClick={handleDownloadResume}
+            <a
+              href="/Ashwani_Pal_Resume.pdf"
+              download="Ashwani_Pal_Resume.pdf"
               className="px-6 py-2.5 rounded-xl border border-white/20 bg-white/5 text-foreground text-sm font-medium hover:bg-white/10 hover:border-white/30 hover:scale-105 transition-all duration-300"
             >
               Download Resume
-            </button>
+            </a>
           </div>
 
           {/* Divider */}

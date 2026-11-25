@@ -16,8 +16,8 @@ export function ResumeSection({ data = resumeData }: ResumeSectionProps) {
         </div>
 
         <a
-          href="/Ashwani_Resume.pdf"
-          target="_blank"
+          href="/Ashwani_Pal_Resume.pdf"
+          download="Ashwani_Pal_Resume.pdf"
           className="flex items-center gap-2 px-4 py-2.5 bg-accent text-accent-foreground rounded-xl text-sm font-medium hover:opacity-90 transition-opacity shadow-lg shadow-accent/20"
         >
           <Download className="w-4 h-4" />
